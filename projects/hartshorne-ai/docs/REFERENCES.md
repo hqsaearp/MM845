@@ -1,0 +1,19 @@
+# References and claim map
+
+Initial source audit: 2026-09-08. The links below are research sources or official software/course sources. This is not an exhaustive literature review or a claim that every cited paper has been read in full. The calculations particular to the proposed benchmark families are supplied in MATHEMATICS.md for independent checking.
+
+| Topic | Source and scope |
+|---|---|
+| Rank-two conjecture at n >= 7; caution about torus-equivariant searches | David Stapleton, *A noncombinatorial proof that toric rank 2 bundles on projective space split* (2020), [arXiv:2001.11075](https://arxiv.org/abs/2001.11075). The abstract states the conjecture; this is not the original conjecture reference. |
+| Holomorphic/algebraic comparison | Jean-Pierre Serre, *Géométrie algébrique et géométrie analytique*, Annales de l'Institut Fourier **6** (1956), 1–42, [doi:10.5802/aif.59](https://doi.org/10.5802/aif.59), [Numdam](https://www.numdam.org/item/AIF_1956__6__1_0/). |
+| Algebraic triviality on affine-space charts | Daniel Quillen, *Projective modules over polynomial rings*, Inventiones Mathematicae **36** (1976), 167–171; A. A. Suslin's independent 1976 theorem. [Warren Dicks' account of Quillen's proof](https://arxiv.org/abs/2112.02272) provides an accessible statement and exposition. |
+| P1 splitting and Horrocks' criterion | G. Horrocks, *Vector bundles on the punctured spectrum of a local ring*, Proceedings of the London Mathematical Society (3) **14** (1964), 689–713. Giorgio Ottaviani, *Vector bundles without intermediate cohomology and the trichotomy result* (2024), [arXiv:2402.07254](https://arxiv.org/abs/2402.07254), [Theorem 1.1 and Corollary 1.2](https://arxiv.org/html/2402.07254v1). |
+| Fixed-plane splitting test | Derived by successive hyperplane lifting; a proof is included in MATHEMATICS.md. Background: C. Okonek, M. Schneider, H. Spindler, *Vector Bundles on Complex Projective Spaces*, corrected reprint, Birkhäuser/Springer (2011), and Horrocks' criterion. Do not cite the statement as if it were an automatic extension theorem. |
+| Hartshorne–Serre construction and local freeness | Enrique Arrondo, *A home-made Hartshorne–Serre correspondence*, [arXiv:math/0610015](https://arxiv.org/abs/math/0610015), especially Theorem 1. The Chern-matched example and section count in this project are explicit specialisations/calculations. |
+| Cohomological restrictions on monad searches | N. Mohan Kumar, C. Peterson, A. P. Rao, *Monads on projective spaces*, Manuscripta Mathematica **112** (2003), 183–189. See also [Ottaviani, Theorem 1.8](https://arxiv.org/html/2402.07254v1) for the inner-cohomology statement. This is a guardrail, not an audit of an as-yet-unspecified P7 ansatz. |
+| Exact computation | [Macaulay2 official documentation](https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/Macaulay2Doc/html/index.html). Actual commands, packages, and versions must be checked when implementation begins. |
+| Course environment and materials | [hqsaearp/MM845](https://github.com/hqsaearp/MM845), [setup tutorial](https://github.com/hqsaearp/MM845/blob/main/tutorial_01/README.md). Assignment-specific deadlines/layout rules were supplied by the user, not inferred from repository structure. |
+
+The equivalence test via the scalar determinant of the complete global Hom space is justified directly in MATHEMATICS.md. The syzygy row-space identifier follows from the displayed graded cohomology module and its annihilator. These arguments must be translated into correct sheaf/module computations and independently checked before their implementations count as exact oracles.
+
+Future source notes should record the precise theorem, hypotheses, and how the proposed construction satisfies them. Do not cite an AI-generated assertion, a search snippet, or an unrelated project discussion as evidence of an established mathematical fact.

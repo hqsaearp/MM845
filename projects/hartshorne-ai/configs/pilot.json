@@ -1,0 +1,38 @@
+{
+  "schema_version": "proposal-1",
+  "status": "planned_not_executed",
+  "provenance": "New operational defaults proposed during the 2026-09-08 reconstruction; not recovered historical choices.",
+  "seed": 20260908,
+  "rng_algorithm": "to_be_pinned_before_first_run",
+  "coefficient_field": "QQ",
+  "geometric_base_change": "CC",
+  "p1": {
+    "degree_min": -4,
+    "degree_max": 5,
+    "unordered_pairs": true,
+    "expected_pair_count": 55,
+    "ordinary_presentations_per_pair": 12,
+    "pair_partitions": {"train": 39, "validation": 8, "test": 8},
+    "ordinary_gauge": {"max_polynomial_degree": 2, "max_shear_factors": 4},
+    "hard_test_gauge": {"max_polynomial_degree": 5, "max_shear_factors": 10},
+    "hard_presentations_per_test_pair": 12,
+    "integer_coefficient_min": -3,
+    "integer_coefficient_max": 3,
+    "laurent_exponent_encoding": "lossless_interval_to_be_derived_no_truncation"
+  },
+  "p2_smoke_tests": {
+    "syzygy_degrees": [2, 3],
+    "serre_fixture": {"a": 0, "b": 0, "k": 1, "point_count": 1},
+    "proposed_timeout_seconds": 60,
+    "certificate_implementation": "not_implemented"
+  },
+  "ml": {
+    "initial_p1_model": "proposed_mlp_degree_regression",
+    "hidden_widths": [64, 64],
+    "hyperparameters": "to_be_fixed_on_training_and_validation_only",
+    "trained": false
+  },
+  "environment_lock": null,
+  "data_manifest": null,
+  "run_results": null
+}
