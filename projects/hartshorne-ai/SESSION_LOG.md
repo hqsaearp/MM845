@@ -19,3 +19,7 @@ Pre-publication checks passed: clean base and new-path scope; JSON parsing and p
 Not done: recovery of the original local transcript; implementation of generators/verifiers; running Macaulay2; generating a dataset; training a model; obtaining experimental results; creating an Overleaf project or the submission PDF; creating a separate GitHub repository; configuring automatic background backups.
 
 Next: draft/compile the actual MM845 two-page plan for 13 September, and implement M1's exact P1 generator/verifier with independent checks before training. Newly proposed pilot sizes, seed, model, and timeouts may be revised before data freeze, with reasons recorded.
+
+### Publication verification
+
+Initial reconstruction published on `main` as [commit db583601f0889fa2f15af75559bacec42080f817](https://github.com/hqsaearp/MM845/commit/db583601f0889fa2f15af75559bacec42080f817). The remote tree SHA, `7fe2cf78b96c52a7ec42445eea374b8ff9e7a159`, matched the staged local Git tree. All 13 files were then read back from GitHub's `main` branch and compared with their complete local UTF-8 contents; all matched. The commit adds only paths inside `projects/hartshorne-ai/`. The branch update was fast-forward, without force. This follow-up log entry records those completed checks, not a mathematical-verifier run.
